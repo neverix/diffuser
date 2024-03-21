@@ -120,7 +120,7 @@ class Trainer(object):
                 self.step_ema()
 
             if self.step % self.save_freq == 0:
-                label = self.step // self.label_freq * self.label_freq
+                label = self.step
                 self.save(label)
 
             if self.step % self.log_freq == 0:
